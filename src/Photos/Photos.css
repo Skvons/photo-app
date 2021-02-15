@@ -1,0 +1,40 @@
+
+	.photo-card{
+		margin: 12px;
+		vertical-align: top;
+		box-sizing: border-box;
+		width:calc(100%/12*4 - 24px);
+		overflow: hidden;
+		position: relative;
+	}
+
+	.photo-card img{
+		vertical-align:bottom;
+		transition: 0.4s;
+		width: 100%;
+	}
+
+	.photo-card:hover .album-logo{
+		transform:scale(1.05);
+	}
+
+	.overlay{
+		background: linear-gradient(0deg, rgba(31,31,31,1) 0%, rgba(31,31,31,0) 100%);
+		opacity: 0;
+		position: absolute; 
+  		bottom: 0;
+  		width: 100%;
+  		transition: .7s;
+  		text-align: center;
+	}
+	.photo-card:hover .overlay{
+		opacity: 1;
+	}
+	
+	.photorow{
+		position: absolute;
+		margin-left: calc(15% - 12px);
+		flex-direction: row;
+		display: flex;
+		flex-wrap: wrap;
+	}
